@@ -1,0 +1,8 @@
+import wixLocationFrontend from "wix-location-frontend";
+$w.onReady(function () {
+    // Select the container using its ID
+    $w("#clickableContainer").onClick( (event) => { // Replace with ID name of your container
+        // Navigate to an external URL
+        wixLocationFrontend.to("https://www.example.com"); // Replace with the external URL you want
+    });
+});
